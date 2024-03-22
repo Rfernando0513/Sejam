@@ -1,0 +1,344 @@
+/*GERAIS*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fahkwang", sans-serif;
+}
+
+body{
+    background-color: #e3e3e3f9;
+    height: 100vh;
+}
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #e3e3e3f9;
+}
+
+.btn-comprar button{
+    margin-top: 30px;
+    margin-left: 85px;
+    padding: 10px 4%;
+    width: 120px;
+    background-color: #000;
+    border: 0;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn-comprar button:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 8px ;
+
+}
+
+.btn-comprar span{
+    color: #fff;
+}
+
+/*Cabeçalho*/
+header{
+    padding: 10px 4%;
+}
+
+header > .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo h1{
+    font-size: 40px;
+    font-family: "Fahkwang", sans-serif;
+    font-weight: 400;
+}
+
+header a{
+    color: #000;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+    margin-top: 10px;
+}
+
+header a:hover{
+    color: #fff;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding:  0 40px;
+}
+
+header .btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #fff;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+header .btn-contato button:hover{
+    box-shadow: 0px 0px 8px  #00ff08;
+}
+
+.topo-site{
+    height: 500px;
+    background-image: url(img/topo-site.webp);
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+    text-align: center;
+}
+
+.topo-site h1 {
+    font-size: 150px;
+    margin-top: 20px;
+    font-family: "Fahkwang", sans-serif;
+    font-weight: 300;
+}
+
+.corpo-site {
+    background-color: #fff;
+    height: 350px;
+    padding: 1px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-card-categoria h2{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+.categoriaItem{
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 30px;
+}
+
+
+.categoriaItem img{
+    transition: .2s;
+}
+
+.categoriaItem img:hover{
+    transform: scale(1.05);
+}
+
+.categoriaItem h4{
+    text-align: center;
+}
+
+section.luxos{
+    background-color: #fff;
+    height: 550px;
+    padding: 1px;
+}
+
+.luxos h2{
+    margin-top: 1px ; 
+    text-align: center;
+    font-size: 30px;
+}
+
+.cardLuxos{
+    background-color: #e3e3e3f9;
+    height: 450px;
+    width: 300px;
+    margin-left: 60px;
+    margin-top: 30px;
+    float: left;
+    border-radius: 5px;
+}
+
+.cardLuxos img{
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.cardLuxos p{
+    font-size: 15px;
+    margin-top: 20px ;
+}
+
+section.sobreNos {
+    background-color: #e3e3e3f9;
+    height: 510px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-sobreNos{
+    background-image: url(img/modelo-pluzSIze.jfif);
+    height:99%;
+    width: 50%;
+    margin: 3px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)
+}
+
+.text-sobreNos{
+    height: 510px;
+    width: 100%;
+}
+
+
+.text-sobreNos h1{
+    text-align: center;
+    margin-top: 80px;
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+
+.text-sobreNos p{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+section.contato{
+    background-color: #e3e3e3f9;
+    background-image: url(img/contato.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 510px;
+}
+
+.redesSocias{
+    height: 500px;
+    max-width: 500px;
+    padding: 10px;
+    float: left;
+}
+
+.cardSocias{
+    background-color: #ffffffd2;
+    height: 100px;
+    width: 400px;
+    padding: 5px 4%;
+    float: left;
+    margin-left: 10px;
+    margin-top: 50px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.cardSocias:hover{
+    transform: scale(1.05);
+}
+
+.cardSocias h2{
+    text-align: center;
+}
+
+.cardSocias p{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+.cardSocias p:hover{
+    transform: scale(1.05);
+    color: blueviolet;
+}
+
+.cardSocias ul{
+    list-style: none;
+    margin-left: 19px;
+}
+
+.cardSocias li{
+    text-align: center;
+    align-items: center;
+    float: left;
+    margin-left: 40px;
+}
+
+
+.cardSocias li:hover{
+    transform: scale(1.05);
+    color: blueviolet;
+}
+
+.cardSocias i{
+    font-size: 35px;
+}
+
+.formContato{
+    height: 500px;
+    width: 600px;
+    margin-left: 10px;
+    margin-top: 50px;
+    float: left;
+}
+
+.form-group{
+    margin-top: 10px;
+}
+
+.form-group label{
+    font-size: 20px;
+}
+
+.form-group input{
+    padding: 15px;
+    width: 500px;
+}
+
+.form-group textarea{
+    padding: 10px;
+    width: 500px;
+}
+
+.text-center{
+    align-items: center;
+    text-align: center;
+}
+
+.botaoContato{
+    margin-right: 90px;
+}
+
+.text-center button{
+    padding: 10px 20px;
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #e3e3e3f9;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.text-center button:hover {
+    transform: scale(1.05);
+}
+
+.text-center button.emailButton:hover {
+    background-color: rgb(60, 130, 243);
+}
+
+.text-center button.whatsappButton:hover {
+    background-color: #00ff08;
+}
