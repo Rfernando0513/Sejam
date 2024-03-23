@@ -435,5 +435,7 @@ footer .line-footer a {
 }
 
 @media screen and (max-width: 1263px){
-    
+    .container{
+        width: 320px;
+    }
 }
