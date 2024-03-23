@@ -421,3 +421,7 @@ footer .line-footer a {
 .social-icons a:hover {
     color: #007bff;
 }
+
+@media screen and (max-width: 1263px){
+    
+}
