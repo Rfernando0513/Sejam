@@ -102,6 +102,12 @@ header .btn-contato button:hover{
     box-shadow: 0px 0px 8px  #00ff08;
 }
 
+.fixed-top{
+    background-color: #e3e3e3f9;
+    height: 80px;
+    box-shadow: 0 2px 4px rgb(0, 0, 0, 0.1);
+}
+
 .topo-site{
     height: 500px;
     background-image: url(img/topo-site.webp);
