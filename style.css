@@ -16,11 +16,30 @@ body{
     height: 100vh;
 }
 
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+@media (min-width: 768px) {
+    html {
+      font-size: 16px;
+    }
+}
+
 .container{
-    max-width: 1280px;
+    max-width: 1220px;
     margin: 0 auto;
     background-color: #e3e3e3f9;
 }
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
 
 .btn-comprar{
     margin: auto;
@@ -108,17 +127,18 @@ header .btn-contato button:hover{
     box-shadow: 0 2px 4px rgb(0, 0, 0, 0.1);
 }
 
-.topo-site{
+section.topo-site{
     height: 500px;
     background-image: url(img/topo-site.webp);
     background-repeat: no-repeat;
     background-position: center; 
     background-size: cover;
     text-align: center;
+    padding: 40px 4%;
 }
 
 .corpo-site {
-    background-color: #fff;
+    background-color: white;
     height: 350px;
     padding: 1px;
     display: flex;
@@ -131,51 +151,46 @@ header .btn-contato button:hover{
     margin-top: 50px;
 }
 
-.categoriaItem{
-    display: inline-block;
-    margin-top: 30px;
-    margin-left: 27px;
-    width: 210px;
-    padding-top: 10px;
-}
-
-
-.categoriaItem img{
-    margin-left: 40px;
-    transition: .2s;
-}
-
-.categoriaItem img:hover{
-    transform: scale(1.05);
-}
-
-.categoriaItem h4{
+.container-card-categoria {
     text-align: center;
-    margin-top: 10px;
 }
+
+.container-card-categoria h2 {
+    margin-top: 50px; /* Espaço acima do título */
+    font-size: 30px;
+}
+
+.categoriaItem {
+    flex: 0 0 calc(20% - 40px); /* 20% para 5 itens por linha, subtraindo 40px devido às margens */
+    padding: 20px;
+    background-color: #fff;
+    margin-left: 15px;
+}
+
+/*Luxos*/
 
 section.luxos{
     background-color: #fff;
-    height: 550px;
-    margin: auto;
-    padding-top: 5px
+    padding: 20px 4%;
 }
+
 
 .luxos h2{
     margin-top: 1px; 
     text-align: center;
     font-size: 30px;
-    padding: 5px 4%;
 }
 
 .cardLuxos{
-    background-color: #e3e3e3f9;
-    height: 460px;
+    background-color: #fff;
+    padding: 10px;
+    /* height: 460px;
     width: 300px;
-    margin-left: 80px;
+    margin-left: 50px;
     margin-top: 20px;
-    float: left;
+    float: left; */
     border-radius: 5px;
+    margin-left: 15px;
 }
 
 .cardLuxos img{
@@ -433,3 +448,26 @@ footer .line-footer a {
 .social-icons a:hover {
     color: #007bff;
 }
+
+@media screen and (max-width: 792px){
+    .container-card-categoria{
+        max-width: 90%;
+        margin: 0 auto;
+        height: auto; /* Definir altura automática */
+    }
+
+    .categoriaItem{
+        display: block; /* Alterar para bloco */
+        margin-top: 30px;
+        margin-left: 0;
+        width: 100%; /* Ocupar toda a largura */
+        padding-top: 10px;
+        text-align: center; /* Centralizar o conteúdo */
+    }
+
+    .categoriaItem img{
+        margin: 0 auto; /* Centralizar a imagem */
+        display: block; /* Para corrigir espaçamento extra */
+    }
+}
+
