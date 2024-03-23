@@ -7,6 +7,10 @@
     font-family: "Fahkwang", sans-serif;
 }
 
+a{
+    text-decoration: none;
+}
+
 body{
     background-color: #e3e3e3f9;
     height: 100vh;
@@ -353,8 +357,67 @@ section.contato{
     background-color: #00ff08;
 }
 
-footer{
-    background-color: #000;
-    margin-top: 1px;
-    height: 250px;
+footer {
+    padding: 40px 4%;  
+    box-shadow: 0 0  40px 10px #ffffff1d;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+
+footer .flex{
+    justify-content: space-between; 
+}
+
+footer .line-footer{
+    padding: 20px 0;
+}
+
+.borda{
+    border-top: 2px solid #000;
+}
+
+footer .social-icons button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+footer .social-icons button:hover {
+    transform: scale(1.5)
+}
+
+footer .social-icons i{
+    justify-content: center;
+}
+
+footer .line-footer p i{
+    color: #000;
+    font-size: 22px;
+}
+
+footer .line-footer a {
+    color: #000;
+}
+
+.social-icons {
+    display: flex;
+    left: 0;
+    margin-top:3px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #007bff;
 }
