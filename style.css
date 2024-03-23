@@ -22,8 +22,12 @@ body{
     background-color: #e3e3e3f9;
 }
 
+.btn-comprar{
+    margin: auto;
+}
+
 .btn-comprar button{
-    margin-top: 30px;
+    margin-top: 1px;
     margin-left: 85px;
     padding: 10px 4%;
     width: 120px;
@@ -107,13 +111,6 @@ header .btn-contato button:hover{
     text-align: center;
 }
 
-.topo-site h1 {
-    font-size: 150px;
-    margin-top: 20px;
-    font-family: "Fahkwang", sans-serif;
-    font-weight: 300;
-}
-
 .corpo-site {
     background-color: #fff;
     height: 350px;
@@ -132,10 +129,13 @@ header .btn-contato button:hover{
     display: inline-block;
     margin-top: 30px;
     margin-left: 27px;
+    width: 210px;
+    padding-top: 10px;
 }
 
 
 .categoriaItem img{
+    margin-left: 40px;
     transition: .2s;
 }
 
@@ -145,26 +145,29 @@ header .btn-contato button:hover{
 
 .categoriaItem h4{
     text-align: center;
+    margin-top: 10px;
 }
 
 section.luxos{
     background-color: #fff;
     height: 550px;
     margin: auto;
+    padding-top: 5px
 }
 
 .luxos h2{
-    margin-top: 1px ; 
+    margin-top: 1px; 
     text-align: center;
     font-size: 30px;
+    padding: 5px 4%;
 }
 
 .cardLuxos{
     background-color: #e3e3e3f9;
-    height: 450px;
+    height: 460px;
     width: 300px;
     margin-left: 80px;
-    margin-top: 30px;
+    margin-top: 20px;
     float: left;
     border-radius: 5px;
 }
@@ -222,6 +225,7 @@ section.sobreNos {
     font-size: 20px;
 }
 
+
 section.contato{
     background-color: #e3e3e3f9;
     background-image: url(img/contato.jpg);
@@ -235,8 +239,9 @@ section.contato{
     height: 500px;
     max-width: 500px;
     padding: 40 4%;
-    margin-top: 50px;
+    margin-top: 10px;
     margin-right: 80px;
+    margin-bottom: 2px;
     float: left;
 }
 
@@ -297,7 +302,8 @@ section.contato{
     height: 500px;
     width: 600px;
     margin-left: 50px;
-    margin-top: 50px;
+    margin-top: 10px;
+    margin-bottom: 2px;
     float: left;
 }
 
