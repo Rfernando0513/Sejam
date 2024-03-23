@@ -163,7 +163,6 @@ section.topo-site{
 .categoriaItem {
     flex: 0 0 calc(20% - 40px); /* 20% para 5 itens por linha, subtraindo 40px devido às margens */
     padding: 20px;
-    background-color: #fff;
     margin-left: 15px;
 }
 
@@ -184,13 +183,10 @@ section.luxos{
 .cardLuxos{
     background-color: #fff;
     padding: 10px;
-    /* height: 460px;
-    width: 300px;
-    margin-left: 50px;
-    margin-top: 20px;
-    float: left; */
+    border: 2px solid #ffffffc7;
     border-radius: 5px;
     margin-left: 15px;
+    margin-bottom: 15px;
 }
 
 .cardLuxos img{
@@ -205,13 +201,20 @@ section.luxos{
 }
 
 section.sobreNos {
-    background-color: #e3e3e3f9;
-    height: 510px;
-    display: flex;
-    justify-content: space-between;
+    padding: 20px 4%;
 }
 
-.img-sobreNos{
+section.text-sobreNos .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.text-sobreNos .text-sobreNos{
+    color: #000;
+
+}
+
+/* .img-sobreNos{
     background-image: url(img/modelo-pluzSIze.jfif);
     height:99%;
     width: 430px;
@@ -223,7 +226,7 @@ section.sobreNos {
     background-position: center; 
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)
-}
+} */
 
 .text-sobreNos{
     height: 510px;
@@ -231,21 +234,6 @@ section.sobreNos {
     float: left;
     margin-left: 80px;
 }
-
-
-.text-sobreNos h1{
-    text-align: center;
-    margin-top: 70px;   
-    font-size: 40px;
-    padding-bottom: 20px;
-}
-
-.text-sobreNos p{
-    text-align: center;
-    margin-top: 5px;
-    font-size: 20px;
-}
-
 
 section.contato{
     background-color: #e3e3e3f9;
