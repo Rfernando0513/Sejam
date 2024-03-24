@@ -214,26 +214,11 @@ section.text-sobreNos .flex{
 
 }
 
-/* .img-sobreNos{
-    background-image: url(img/modelo-pluzSIze.jfif);
-    height:99%;
-    width: 430px;
-    margin-top: 2px;
-    margin-left: 10px;
-    float: left;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center; 
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)
-} */
-
-.text-sobreNos{
-    height: 510px;
-    width: 650px;
-    float: left;
-    margin-left: 80px;
-}
+.img-sobreNos img{
+    height: 400px;
+    width: 300px;
+    border-radius: 20px;
+} 
 
 section.contato{
     background-color: #e3e3e3f9;
