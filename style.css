@@ -30,7 +30,7 @@ html {
 .container{
     max-width: 1220px;
     margin: 0 auto;
-    background-color: #e3e3e3f9;
+    background-color: #000;
 }
 
 .flex{
@@ -66,6 +66,11 @@ html {
     color: #fff;
 }
 
+.titulo{
+    text-align: center;
+    color: #fff;
+}
+
 /*Cabeçalho*/
 header{
     padding: 10px 4%;
@@ -87,12 +92,12 @@ header a{
     color: #000;
     text-decoration: none;
     display: inline-block;
-    transition: .2s;
+    transition: .1s;
     margin-top: 10px;
 }
 
 header a:hover{
-    color: #fff;
+    color: #000;
     transform: scale(1.05);
 }
 
@@ -109,7 +114,7 @@ header .btn-contato button{
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 600;
-    background-color: #fff;
+    background-color: #000;
     border: 0;
     border-radius: 30px;
     cursor: pointer;
@@ -119,8 +124,25 @@ header .btn-contato button:hover{
     box-shadow: 0px 0px 8px  #00ff08;
 }
 
+.navbar a{
+    color: #fff;
+}
+
+.btn-custom {
+    color: #000; 
+    background-color: #fff;
+    border-color: #000; 
+}
+
+.btn-custom:hover {
+    transform: scale(1.05);
+    color: #fff;
+    background-color: #000;
+    border-color: #000; 
+}
+
 .fixed-top{
-    background-color: #e3e3e3f9;
+    background-color: #000;
     height: 80px;
     box-shadow: 0 2px 4px rgb(0, 0, 0, 0.1);
 }
@@ -137,21 +159,13 @@ section.topo-site{
 /*Luxos*/
 
 section.luxos{
-    background-color: #fff;
     padding: 20px 4%;
-}
-
-
-.luxos h2{
-    margin-top: 1px; 
-    text-align: center;
-    font-size: 30px;
 }
 
 .cardLuxos{
     background-color: #fff;
     padding: 10px;
-    border: 2px solid #ffffffc7;
+    border: 1px solid #ffffffc7;
     border-radius: 5px;
     margin-left: 15px;
     margin-bottom: 15px;
@@ -159,12 +173,7 @@ section.luxos{
 
 .cardLuxos h3{
     font-size: 30px;
-    text-align: center  ;
-}
- 
-.cardLuxos h3 span{
-    color: red;
-    font-size: 25px;
+    text-align: center;
 }
 
 .cardLuxos img{
@@ -182,7 +191,7 @@ section.sobreNos {
     padding: 20px 4%;
     display: flex;
     justify-content: space-between;
-    align-items: center; /* Alinha verticalmente */
+    align-items: center;
     flex-wrap: wrap
 }
 
@@ -192,13 +201,16 @@ section.sobreNos {
 }
 
 .text-sobreNos h2{
-    margin-top: 30px;
-    font-size: 40px;
+    text-align: center;
+    margin-left: 0px;
+    color: #fff;
 }
 
 .text-sobreNos p{
-    margin-top: 15px;
+    margin-top: 30px;
+    margin-left: 10px;
     font-size: 19px;
+    color: #fff;
 }
 
 .img-sobreNos{
@@ -212,28 +224,39 @@ section.sobreNos {
     border-radius: 20px;
 } 
 
+/*  Contato */
+
 section.contato{
-    background-color: #e3e3e31e;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 510px;
+    background-color: #000;
+    padding: 80px 4%;
+}
+
+.line{
+    margin-top: 1px;
+    background-color: #fff;
+    box-shadow: 0 0  40px 10px #ffffff88
 }
 
 .formContato{
-    height: 500px;
-    width: 600px;
-    margin-left: 50px;
-    margin-top: 10px;
-    margin-bottom: 2px;
-    float: left;
+    padding: 40px 4%;
 }
+
+.formContato form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
 
 .form-group{
     margin-top: 10px;
 }
 
 .form-group label{
+    color: #fff;
     font-size: 20px;
     margin-left: 40px;
 }
@@ -287,7 +310,7 @@ section.contato{
 
 footer {
     padding: 40px 4%;  
-    box-shadow: 0 0  40px 10px #ffffff1d;
+    box-shadow: 0 0  40px 10px #ffffff88;
     margin-top: 20px;
     margin-bottom: 0;
 }
@@ -302,7 +325,7 @@ footer .line-footer{
 }
 
 .borda{
-    border-top: 2px solid #000;
+    border-top: 2px solid #fff;
 }
 
 footer .social-icons button{
@@ -325,12 +348,18 @@ footer .social-icons i{
 }
 
 footer .line-footer p i{
-    color: #000;
+    color: #fff;
     font-size: 22px;
 }
 
 footer .line-footer a {
-    color: #000;
+    color: #fff;
+}
+
+
+.logo-footer a{
+    color: #fff;
+    font-size: 30px;
 }
 
 .social-icons {
@@ -342,33 +371,10 @@ footer .line-footer a {
 .social-icons a {
     margin: 0 10px;
     font-size: 24px;
-    color: #333;
+    color: #fff;
     text-decoration: none;
 }
 
 .social-icons a:hover {
     color: #007bff;
 }
-
-@media screen and (max-width: 792px){
-    .container-card-categoria{
-        max-width: 90%;
-        margin: 0 auto;
-        height: auto; /* Definir altura automática */
-    }
-
-    .categoriaItem{
-        display: block; /* Alterar para bloco */
-        margin-top: 30px;
-        margin-left: 0;
-        width: 100%; /* Ocupar toda a largura */
-        padding-top: 10px;
-        text-align: center; /* Centralizar o conteúdo */
-    }
-
-    .categoriaItem img{
-        margin: 0 auto; /* Centralizar a imagem */
-        display: block; /* Para corrigir espaçamento extra */
-    }
-}
-

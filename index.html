@@ -11,8 +11,8 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg fixed-top">
-            <div class="container justify-content-between">
+        <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #000;">
+            <div class="container justify-content-between" style="background-color: #000;">
                 <a class="navbar-brand" href="#">SEJAM</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -34,9 +34,9 @@
                     </ul>
                 </div>
                 <form class="d-flex">
-                    <a href="#" class="bi bi-cart4 text-dark me-3 fs-4"></a>
+                    <a href="#" class="bi bi-cart4 text-write me-3 fs-4"></a>
                     <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
-                    <button class="btn btn-outline-dark" type="submit">Pesquisar</button>
+                    <button class="btn btn-custom" type="submit"> <i class="bi bi-search"></i></button>
                 </form>
             </div>
         </nav>
@@ -51,7 +51,7 @@
         </section>
         <section  id="prod" class="luxos">
             <div class="container">
-                <h2>LINHA LUXOS</h2>
+                <h2 class="titulo">LINHA LUXOS</h2>
                 <div class="flex">
                 <div class="cardLuxos">
                     <img src="img/luxos-verde.jfif" alt="linha luxos verde">
@@ -84,12 +84,11 @@
             <div class="container">
                 <div class="flex">
                     <div class="text-sobreNos">
-                        <h2>MUITO PRAZER, <span>SOU A SEJAM</span></h2>
+                        <h2>MUITO PRAZER, SOMOS A SEJAM</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto praesentium quam temporibus eius voluptatem esse obcaecati, eos dignissimos officiis autem hic, fugiat aspernatur sequi eaque quaerat non exercitationem, porro minima.</p>
                         
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam non obcaecati architecto, eveniet dolore alias corporis sequi dolores porro quod consectetur impedit inventore minima deleniti repellendus, doloremque id? Provident, animi.</p>
                         </div>
-
                     <div class="img-sobreNos">
                         <img src="img/modelo-pluzSIze.jfif" alt="modelo plus-size       ">
                     </div>
@@ -97,31 +96,34 @@
         </section>
         <section id="contato" class="contato">
             <div class="container">
-                <div class="formContato">
-                    <form name="Contact-Index" asp-controller="Contact" asp-action="Index" method="post">
-                        <div class="form-group">
-                            <label for="Name">Nome</label>
-                            <input type="text" asp-for="Name" class="form-control" placeholder="Digite o Nome">
-                        </div>
-                        <div class="form-group">
-                            <label for="Mail">Email</label>
-                            <input type="text" asp-for="Mail" class="form-control" placeholder="Digite o Email">
-                        </div>     
-                        <div class="form-group">
-                            <label for="Phone">Telefone</label>
-                            <input type="tel" for="Phone" class="form-control telefone" placeholder="Digite o Telefone">
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Mensagem</label>
-                            <textarea for="Message" class="form-control" placeholder="Digite a Mensagem"></textarea>
-                        </div>
-                        <div class="text-center">
-                            <div class="botaoContato">
-                                <button class="emailButton">Enviar Email</button>
-                                <button class="whatsappButton">WhatsApp</button>
+                <div class="line"></div>
+                <div class="flex">
+                    <div class="formContato">
+                        <form name="Contact-Index" asp-controller="Contact" asp-action="Index" method="post">
+                            <div class="form-group">
+                                <label for="Name">Nome</label>
+                                <input type="text" asp-for="Name" class="form-control" placeholder="Digite o Nome">
                             </div>
-                        </div>
-                    </form>
+                            <div class="form-group">
+                                <label for="Mail">Email</label>
+                                <input type="text" asp-for="Mail" class="form-control" placeholder="Digite o Email">
+                            </div>     
+                            <div class="form-group">
+                                <label for="Phone">Telefone</label>
+                                <input type="tel" for="Phone" class="form-control telefone" placeholder="Digite o Telefone">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Mensagem</label>
+                                <textarea for="Message" class="form-control" placeholder="Digite a Mensagem"></textarea>
+                            </div>
+                            <div class="text-center">
+                                <div class="botaoContato">
+                                    <button class="emailButton">Enviar Email</button>
+                                    <button class="whatsappButton">WhatsApp</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>            
         </section>
@@ -132,7 +134,7 @@
             <div class="line-footer">
                 <div class="flex">
                     <div class="logo-footer">
-                        <a href="#" style="color: #000; font-size: 25px;">SEJAM</a>
+                        <a href="#">SEJAM</a>
                     </div>
                     <div class="social-icons">
                         <a href="#">
@@ -147,7 +149,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="line-footer borda">
                 <p>
                     <i class="bi bi-envelope-fill"></i>
@@ -156,6 +157,7 @@
             </div>
         </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
