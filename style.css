@@ -12,7 +12,7 @@ a{
 }
 
 body{
-    background-color: #e3e3e3f9;
+    background-color: #000;
     height: 100vh;
 }
 
@@ -35,14 +35,12 @@ html {
 
 .flex{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
 }
 
 
 .btn-comprar{
-    margin: auto;
+    justify-content: center;
+    margin-left: 13px;
 }
 
 .btn-comprar button{
@@ -53,7 +51,7 @@ html {
     background-color: #000;
     border: 0;
     border-radius: 10px;
-    font-size: 18px;
+    font-size: 15px;
     cursor: pointer;
     transition: 0.5s;
 }
@@ -136,36 +134,6 @@ section.topo-site{
     text-align: center;
     padding: 40px 4%;
 }
-
-.corpo-site {
-    background-color: white;
-    height: 350px;
-    padding: 1px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.container-card-categoria h2{
-    text-align: center;
-    font-size: 30px;
-    margin-top: 50px;
-}
-
-.container-card-categoria {
-    text-align: center;
-}
-
-.container-card-categoria h2 {
-    margin-top: 50px; /* Espaço acima do título */
-    font-size: 30px;
-}
-
-.categoriaItem {
-    flex: 0 0 calc(20% - 40px); /* 20% para 5 itens por linha, subtraindo 40px devido às margens */
-    padding: 20px;
-    margin-left: 15px;
-}
-
 /*Luxos*/
 
 section.luxos{
@@ -189,6 +157,16 @@ section.luxos{
     margin-bottom: 15px;
 }
 
+.cardLuxos h3{
+    font-size: 30px;
+    text-align: center  ;
+}
+ 
+.cardLuxos h3 span{
+    color: red;
+    font-size: 25px;
+}
+
 .cardLuxos img{
     width: 300px;
     height: 300px;
@@ -200,18 +178,32 @@ section.luxos{
     margin-top: 20px ;
 }
 
-section.sobreNos {
+section.sobreNos { 
     padding: 20px 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Alinha verticalmente */
+    flex-wrap: wrap
 }
 
-section.text-sobreNos .flex{
-    align-items: center;
-    gap: 60px;
-}
-
-.text-sobreNos .text-sobreNos{
+.text-sobreNos {
+    margin-left: 30px;
     color: #000;
+}
 
+.text-sobreNos h2{
+    margin-top: 30px;
+    font-size: 40px;
+}
+
+.text-sobreNos p{
+    margin-top: 15px;
+    font-size: 19px;
+}
+
+.img-sobreNos{
+    margin-left: 120px;
+    margin-right: 30px;
 }
 
 .img-sobreNos img{
@@ -221,75 +213,11 @@ section.text-sobreNos .flex{
 } 
 
 section.contato{
-    background-color: #e3e3e3f9;
-    background-image: url(img/contato.jpg);
+    background-color: #e3e3e31e;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 510px;
-}
-
-.redesSocias{
-    height: 500px;
-    max-width: 500px;
-    padding: 40 4%;
-    margin-top: 10px;
-    margin-right: 80px;
-    margin-bottom: 2px;
-    float: left;
-}
-
-.cardSocias{
-    background-color: #ffffffd2;
-    height: 100px;
-    width: 400px;
-    padding: 5px 4%;
-    float: left;
-    margin-left: 1px;
-    margin-top: 40px;
-    border-radius: 10px;
-    transition: 1s;
-}
-
-.cardSocias:hover{
-    transform: scale(1.05);
-}
-
-.cardSocias h2{
-    text-align: center;
-}
-
-.cardSocias p{
-    text-align: center;
-    font-size: 25px;
-    margin-top: 15px;
-}
-
-.cardSocias p:hover{
-    transform: scale(1.05);
-    color: blueviolet;
-}
-
-.cardSocias ul{
-    list-style: none;
-    margin-left: 19px;
-}
-
-.cardSocias li{
-    text-align: center;
-    align-items: center;
-    float: left;
-    margin-left: 40px;
-}
-
-
-.cardSocias li:hover{
-    transform: scale(1.05);
-    color: blueviolet;
-}
-
-.cardSocias i{
-    font-size: 35px;
 }
 
 .formContato{
