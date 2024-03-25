@@ -1,5 +1,4 @@
 /*GERAIS*/
-
 *{
     margin: 0;
     padding: 0;
@@ -25,6 +24,9 @@ html {
     html {
       font-size: 16px;
     }
+    .navbar-toggler-icon{
+        color: #fff;
+    }
 }
 
 .container{
@@ -37,34 +39,23 @@ html {
     display: flex;
 }
 
-
-.btn-comprar{
-    justify-content: center;
-    margin-left: 13px;
+.social-icons {
+    display: flex;
+    left: 0;
+    margin-top:3px;
 }
 
-.btn-comprar button{
-    margin-top: 1px;
-    margin-left: 85px;
-    padding: 10px 4%;
-    width: 120px;
-    background-color: #000;
-    border: 0;
-    border-radius: 10px;
-    font-size: 15px;
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-.btn-comprar button:hover{
-    transform: scale(1.05);
-    box-shadow: 0px 0px 8px ;
-
-}
-
-.btn-comprar span{
+.social-icons a {
+    margin: 0 10px;
+    font-size: 24px;
     color: #fff;
+    text-decoration: none;
 }
+
+.social-icons a:hover {
+    color: #007bff;
+}
+
 
 .titulo{
     text-align: center;
@@ -148,27 +139,30 @@ header .btn-contato button:hover{
 }
 
 section.topo-site{
-    height: 500px;
-    background-image: url(img/topo-site.webp);
-    background-repeat: no-repeat;
-    background-position: center; 
-    background-size: cover;
     text-align: center;
-    padding: 40px 4%;
+}
+
+.topo-site img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 /*Luxos*/
 
 section.luxos{
-    padding: 20px 4%;
+    padding: 40px 4%;
 }
 
-.cardLuxos{
+section.luxos .flex{
+    gap: 40px;
+}
+
+.luxos .cardLuxos{
     background-color: #fff;
-    padding: 10px;
+    padding: 20px;
     border: 1px solid #ffffffc7;
     border-radius: 5px;
-    margin-left: 15px;
-    margin-bottom: 15px;
+    margin-top: 25px;
 }
 
 .cardLuxos h3{
@@ -176,16 +170,46 @@ section.luxos{
     text-align: center;
 }
 
-.cardLuxos img{
-    width: 300px;
-    height: 300px;
+.luxos .cardLuxos img{
+    display: block; 
+    margin: 0 auto; 
+    max-width: 100%; 
+    max-height: 100%;
     border-radius: 5px;
 }
 
 .cardLuxos p{
     font-size: 15px;
-    margin-top: 20px ;
+    margin-top: 20px;
+    text-align: center;
 }
+
+
+.btn-comprar{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn-comprar button{
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: 0;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn-comprar button:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 8px ;
+}
+
+
+/*  SOBRE NÓS  */
+
 
 section.sobreNos { 
     padding: 20px 4%;
@@ -227,8 +251,15 @@ section.sobreNos {
 /*  Contato */
 
 section.contato{
-    background-color: #000;
     padding: 80px 4%;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+section.contato form{
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 .line{
@@ -236,20 +267,6 @@ section.contato{
     background-color: #fff;
     box-shadow: 0 0  40px 10px #ffffff88
 }
-
-.formContato{
-    padding: 40px 4%;
-}
-
-.formContato form{
-    max-width: 500px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 10px;
-}
-
 
 .form-group{
     margin-top: 10px;
@@ -279,8 +296,8 @@ section.contato{
 }
 
 .botaoContato{
-    margin-right: 90px;
-    margin-top: 30px;
+    margin: 0 auto;
+    margin-top: 20px;
 }
 
 .text-center button{
@@ -362,19 +379,41 @@ footer .line-footer a {
     font-size: 30px;
 }
 
-.social-icons {
-    display: flex;
-    left: 0;
-    margin-top:3px;
-}
+@media  screen and (max-width: 1020px){
+    /*  GERAIS*/
+    .flex{
+        flex-direction: column;
+    }
 
-.social-icons a {
-    margin: 0 10px;
-    font-size: 24px;
-    color: #fff;
-    text-decoration: none;
-}
+    /*  CORPO SITE */
+    .topo-site{
+        margin-top: 100px;
+    }
 
-.social-icons a:hover {
-    color: #007bff;
+    /*  PRODUTOS */
+    .btn-comprar button{
+        margin-left: 20pxs;
+    }
+
+    /* SOBRE NÓS */
+    .img-sobreNos{
+        margin: 0 auto;
+        gap: 30px;
+    }
+
+    /* contato */
+    .formContato .flex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-group label, .form-group input, .form-group textarea {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .form-group input, .form-group textarea {
+        margin-left: 0;
+    }
 }

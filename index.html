@@ -11,8 +11,8 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #000;">
-            <div class="container justify-content-between" style="background-color: #000;">
+        <nav class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
+            <div class="container justify-content-between">
                 <a class="navbar-brand" href="#">SEJAM</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -34,19 +34,17 @@
                     </ul>
                 </div>
                 <form class="d-flex">
-                    <a href="#" class="bi bi-cart4 text-write me-3 fs-4"></a>
+                    <a href="#" class="bi bi-cart4 text-white me-3 fs-4"></a>
                     <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
                     <button class="btn btn-custom" type="submit"> <i class="bi bi-search"></i></button>
                 </form>
             </div>
-        </nav>
+        </nav>        
     </header>
     <main>
         <section id="home" class="topo-site">
             <div class="container">
-                    <div class="img-topo">
-                    
-                    </div>
+                <img src="img/topo-site.webp" alt="topo site">
             </div>
         </section>
         <section  id="prod" class="luxos">
@@ -54,31 +52,29 @@
                 <h2 class="titulo">LINHA LUXOS</h2>
                 <div class="flex">
                 <div class="cardLuxos">
-                    <img src="img/luxos-verde.jfif" alt="linha luxos verde">
+                    <img src="img/luxos-verde.png" alt="linha luxos verde">
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam dolores dolorum cumque natus necessitatibus explicabo quam ad blanditiis laborum sapiente, eveniet facilis aliquid recusandae eum itaque unde delenitiDE:  at atque.</p>
                     <h3>R$199,90 <br></h3>
                     <div class="btn-comprar">
-                    <button><span>COMPRAR</span></button>
+                        <button>COMPRAR</button>
+                    </div>
                 </div>
-            </div>
-            <div class="cardLuxos">
-                <img src="img/luxos-bege.jpeg" alt="linha luxos luxos bege">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam dolores dolorum cumque natus necessitatibus explicabo quam ad blanditiis laborum sapiente, eveniet facilis aliquid recusandae eum itaque unde deleniti at atque.</p>
-                <h3>R$199,90</h3>
-                <div class="btn-comprar">
-                    <button><span>COMPRAR</span></button>
+                <div class="cardLuxos">
+                    <img src="img/luxos-bege.jpeg" alt="linha luxos luxos bege">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam dolores dolorum cumque natus necessitatibus explicabo quam ad blanditiis laborum sapiente, eveniet facilis aliquid recusandae eum itaque unde deleniti at atque.</p>
+                    <h3>R$199,90</h3>
+                    <div class="btn-comprar">
+                        <button>COMPRAR</button>
+                    </div>
                 </div>
+                <div class="cardLuxos">
+                    <img src="img/luxos-vermelho.jpeg" alt="linha luxos luxos vermelho">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam dolores dolorum cumque natus necessitatibus explicabo quam ad blanditiis laborum sapiente, eveniet facilis aliquid recusandae eum itaque unde deleniti at atque.</p>
+                    <h3>R$199,90</h3>
+                    <div class="btn-comprar">
+                        <button><span>COMPRAR</span></button>
+                    </div>
             </div>
-            <div class="cardLuxos">
-                <img src="img/luxos-vermelho.jpeg" alt="linha luxos luxos vermelho">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam dolores dolorum cumque natus necessitatibus explicabo quam ad blanditiis laborum sapiente, eveniet facilis aliquid recusandae eum itaque unde deleniti at atque.</p>
-                <h3>R$199,90</h3>
-                <div class="btn-comprar">
-                    <button><span>COMPRAR</span></button>
-                </div>
-            </div>
-            </div>
-                </div>
         </section>
         <section id="sobre" class="sobreNos">
             <div class="container">
@@ -88,42 +84,41 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto praesentium quam temporibus eius voluptatem esse obcaecati, eos dignissimos officiis autem hic, fugiat aspernatur sequi eaque quaerat non exercitationem, porro minima.</p>
                         
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam non obcaecati architecto, eveniet dolore alias corporis sequi dolores porro quod consectetur impedit inventore minima deleniti repellendus, doloremque id? Provident, animi.</p>
-                        </div>
+                    </div>
                     <div class="img-sobreNos">
-                        <img src="img/modelo-pluzSIze.jfif" alt="modelo plus-size       ">
+                        <img src="img/modelo-pluzSIze.jfif" alt="modelo plus-size">
                     </div>
                 </div>
         </section>
         <section id="contato" class="contato">
             <div class="container">
                 <div class="line"></div>
+                <h1 class="titulo">FALA COMIGO</h1>
                 <div class="flex">
-                    <div class="formContato">
-                        <form name="Contact-Index" asp-controller="Contact" asp-action="Index" method="post">
-                            <div class="form-group">
-                                <label for="Name">Nome</label>
-                                <input type="text" asp-for="Name" class="form-control" placeholder="Digite o Nome">
+                    <form class="formContato">
+                        <div class="form-group">
+                            <label for="Name">Nome</label>
+                            <input type="text" class="form-control" placeholder="Digite o Nome">
+                        </div>
+                        <div class="form-group">
+                            <label for="Mail">Email</label>
+                            <input type="text" class="form-control" placeholder="Digite o Email">
+                        </div>     
+                        <div class="form-group">
+                            <label for="Phone">Telefone</label>
+                            <input type="tel" class="form-control telefone" placeholder="Digite o Telefone">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensagem</label>
+                            <textarea class="form-control" placeholder="Digite a Mensagem"></textarea>
+                        </div>
+                        <div class="text-center">
+                            <div class="botaoContato">
+                                <button class="emailButton">Enviar Email</button>
+                                <button class="whatsappButton">WhatsApp</button>
                             </div>
-                            <div class="form-group">
-                                <label for="Mail">Email</label>
-                                <input type="text" asp-for="Mail" class="form-control" placeholder="Digite o Email">
-                            </div>     
-                            <div class="form-group">
-                                <label for="Phone">Telefone</label>
-                                <input type="tel" for="Phone" class="form-control telefone" placeholder="Digite o Telefone">
-                            </div>
-                            <div class="form-group">
-                                <label for="message">Mensagem</label>
-                                <textarea for="Message" class="form-control" placeholder="Digite a Mensagem"></textarea>
-                            </div>
-                            <div class="text-center">
-                                <div class="botaoContato">
-                                    <button class="emailButton">Enviar Email</button>
-                                    <button class="whatsappButton">WhatsApp</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+                        </div>
+                    </form>
                 </div>
             </div>            
         </section>
