@@ -134,7 +134,7 @@ header .btn-contato button:hover{
 
 .fixed-top{
     background-color: #000;
-    height: 80px;
+    height: 82px;
     box-shadow: 0 2px 4px rgb(0, 0, 0, 0.1);
 }
 
@@ -380,9 +380,14 @@ footer .line-footer a {
 }
 
 @media  screen and (max-width: 1020px){
-    /*  GERAIS*/
+    /*  GERAISS*/
     .flex{
         flex-direction: column;
+    }
+
+    /* CABEÇALHO */
+    header form{
+        margin-bottom: 5px;
     }
 
     /*  CORPO SITE */
