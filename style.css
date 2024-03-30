@@ -433,6 +433,6 @@ footer .line-footer a {
     section.contato iframe{
         margin: 0 auto;
         margin-top: 30px;
-        width: 300px;
+        width: 100%;
     }
 }
