@@ -62,6 +62,10 @@ html {
     color: #fff;
 }
 
+.titulo span{
+    color: #ffd700;
+} 
+
 /*Cabeçalho*/
 header{
     padding: 10px 4%;
@@ -259,7 +263,6 @@ section.contato{
 
 section.contato form{
     max-width: 500px;
-    margin: 0 auto;
 }
 
 .line{
@@ -323,6 +326,11 @@ section.contato form{
 
 .text-center button.whatsappButton:hover {
     background-color: #00ff08;
+}
+
+section.contato iframe{
+    margin-top: 50px;
+    margin-left: 100px;
 }
 
 footer {
@@ -420,5 +428,11 @@ footer .line-footer a {
 
     .form-group input, .form-group textarea {
         margin-left: 0;
+    }
+
+    section.contato iframe{
+        margin: 0 auto;
+        margin-top: 30px;
+        width: 300px;
     }
 }
