@@ -414,6 +414,11 @@ footer .line-footer a {
         gap: 30px;
     }
 
+    .img-sobreNos img{
+        width: 100%;
+        max-width: 300px;
+    }
+
     /* contato */
     .formContato .flex{
         display: flex;
@@ -434,5 +439,6 @@ footer .line-footer a {
         margin: 0 auto;
         margin-top: 30px;
         width: 100%;
+        max-width: 400px;
     }
 }
